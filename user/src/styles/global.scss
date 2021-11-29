@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+body,
+input,
+button {
+  font: 400 12px "Roboto Slab", sans-serif;
+}

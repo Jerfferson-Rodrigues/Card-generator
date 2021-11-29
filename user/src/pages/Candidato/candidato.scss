@@ -1,0 +1,173 @@
+$colorHome: #2e79de;
+$background: #f0f2f5;
+$colorIcon: #a0f1f7;
+$colorIcon2: #0fd9e7;
+$colorButton: #fa8e2c;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page-auth {
+  span {
+    margin: 14px;
+    font-size: 15px;
+    color: $colorHome;
+  }
+
+  // aba candidato
+
+  .dropdown {
+    max-height: 100vh;
+    height: 160px;
+    width: 23rem;
+    margin: 10px;
+
+    .dropdown-select {
+      padding: 0.9rem;
+      border-radius: 15px;
+      margin-top: 10px;
+      background-color: $background;
+      box-shadow: 0px 0px 7px 0px #d9d9d9;
+
+      width: 100%;
+      height: 47px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.5rem;
+      cursor: pointer;
+
+      .icon {
+        color: #cacaca;
+      }
+
+      .select {
+        font-size: 13px;
+
+        color: #1c1d1f;
+      }
+    }
+
+    .options-container {
+      background: $background;
+      color: #1c1d1f;
+      font-size: 13px;
+      box-shadow: 0px 0px 7px 0px #d9d9d9;
+      margin-top: 5px;
+      width: 100%;
+      // opacity: 0;
+      transition: all 0.5s;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .option,
+    .selected {
+      padding: 12px 24px;
+      cursor: pointer;
+
+      .radio {
+        display: none;
+      }
+    }
+
+    .option:hover {
+      background: $colorIcon;
+    }
+
+    label {
+      cursor: pointer;
+    }
+  }
+  .btn {
+    width: 130px;
+    height: 45px;
+
+    margin-top: -50px;
+    border: 0;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    background: $colorButton;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    border: 2px solid $colorIcon2;
+  }
+}
+
+@media (max-width: 870px) {
+  #page-auth {
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside {
+    text-align: center;
+  }
+  #page-auth aside #card {
+    font-size: 4rem;
+    margin-bottom: 0.2em;
+  }
+  #page-auth aside #generator {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 530px) {
+  #page-auth {
+    margin: 0;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside {
+    text-align: center;
+  }
+  #page-auth aside #card {
+    font-size: 2.9rem;
+  }
+  #page-auth aside #generator {
+    font-size: 2.5rem;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 4rem;
+  }
+
+  #page-auth main .btn {
+    margin: 0;
+    margin-bottom: 1em;
+    // text-align: center;
+    // align-itepage-auth
+    width: 22em;
+  }
+}
+
+@media (max-width: 320px) {
+  #page-auth {
+    margin: 0;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside {
+    text-align: center;
+  }
+  #page-auth aside #card {
+    font-size: 2.3rem;
+  }
+  #page-auth aside #generator {
+    font-size: 1.7rem;
+  }
+
+  #page-auth main .btn {
+    margin: 0;
+    margin-bottom: 1em;
+    width: 17em;
+  }
+}

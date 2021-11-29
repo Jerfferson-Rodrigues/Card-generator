@@ -1,0 +1,148 @@
+$colorHome: #0fd9e7;
+$background: #2c435b;
+$colorhover: #14aae6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // max-width: 100vw;
+  height: 100vh;
+
+  background: $background;
+
+  aside {
+    margin: 2rem;
+
+    #card {
+      color: $colorHome;
+      font-size: 2.9rem;
+      height: 3.4rem;
+    }
+
+    #generator {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $colorHome;
+      font-size: 2.5rem;
+      color: $background;
+      height: 4rem;
+      bottom: -100%;
+
+      :hover {
+        bottom: 0;
+        color: $colorHome;
+        transition: 0.1s ease-in;
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    .btn {
+      background-color: $colorHome;
+      margin: 1em;
+      padding: 0.8em;
+      border: 1px solid $colorHome;
+      width: 250px;
+      border-radius: 15px;
+      font-size: 1.2em;
+      font-weight: 500;
+      cursor: pointer;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .link {
+      text-decoration: none;
+
+      :hover {
+        background-color: $colorhover;
+      }
+    }
+
+    .icon {
+      min-height: 35px;
+      min-width: 35px;
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  #home {
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside {
+    text-align: center;
+  }
+  #home aside #card {
+    font-size: 4rem;
+    margin-bottom: 0.2em;
+  }
+  #home aside #generator {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 530px) {
+  #home {
+    margin: 0;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside {
+    text-align: center;
+  }
+  #home aside #card {
+    font-size: 2.9rem;
+  }
+  #home aside #generator {
+    font-size: 2.5rem;
+  }
+
+  main {
+    flex-direction: column;
+    margin: 4rem;
+  }
+
+  #home main .btn {
+    margin: 0;
+    margin-bottom: 1em;
+    // text-align: center;
+    // align-items: center;
+    width: 22em;
+  }
+}
+
+@media (max-width: 320px) {
+  #home {
+    margin: 0;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  aside {
+    text-align: center;
+  }
+  #home aside #card {
+    font-size: 2.3rem;
+  }
+  #home aside #generator {
+    font-size: 1.7rem;
+  }
+
+  #home main .btn {
+    margin: 0;
+    margin-bottom: 1em;
+    width: 17em;
+  }
+}

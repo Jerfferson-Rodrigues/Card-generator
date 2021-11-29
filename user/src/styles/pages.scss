@@ -1,0 +1,56 @@
+$colorHome: #2e79de;
+$background: #f0f2f5;
+$colorIcon: #7cebf3;
+$colorIcon2: #0fd9e7;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  background: $background;
+
+  aside {
+    margin: 2rem;
+
+    #card {
+      color: $colorHome;
+      font-size: 2.9rem;
+      height: 3.4rem;
+    }
+
+    #generator {
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $colorHome;
+      font-size: 2.5rem;
+      color: $background;
+      height: 4rem;
+      bottom: -100%;
+      margin-bottom: 3.5rem;
+
+      :hover {
+        bottom: 0;
+        color: $colorHome;
+        transition: 0.1s ease-in;
+      }
+    }
+
+    .back {
+      text-decoration: none;
+      color: $colorIcon;
+      font-size: 2rem;
+
+      :hover {
+        color: $colorIcon2;
+        transition: 0.1s ease-in;
+      }
+    }
+  }
+}
